@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+h1,
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+ol,
+button,
+p,
+a,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #101c36;
+  text-align: center;
+  font-family: Ariel, sans-serif;
+  font-size: 1rem;
+}
+
+.header__image {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+}
+
+.border {
+  height: 10px;
+}
+.header__wrapper {
+  height: 140px;
+  margin-bottom: 35px;
+}
+
+.header__title {
+  color: #888;
+  font-size: 16px;
+  font-family: Ariel, sans-serif;
+}
+
+.header__title-link {
+  color: #EC4B2E;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Ariel, sans-serif;
+}
+
+.main {
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+}
+
+.footer-wrapper {
+  padding: 2rem 1rem;
+  color: #626574;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__link {
+  color: #626574;
+}
+
+.wrapper {
+  min-height: 600px;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 15px;
+  background: url('../images/arrows.png') no-repeat center top;
+}
+
+.domainname {
+  position: relative;
+  top: 15px;
+  font-size: 1.5rem;
+  color: #848484;
+}
+
+.add {
+  position: relative;
+  top: 50px;
+  width: 530px;
+  height: 499px;
+  margin: 0 auto;
+}
+
+.add__title {
+  text-align: start;
+  color: #cdcdcd;
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.add__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 160px;
+}
+.add__link {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  background-color: #11264d;
+  border-radius: 25px;
+  font-size: 24px;
+  border: 5px solid white;
+  line-height: 26px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 50px 13px;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.link__content {
+  display: inline-block;
+}
+
+.add__link:hover {
+  background-color: #242B42;
+  text-decoration: underline;
+}
+
+.background {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    background: none;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .add__wrapper--first {
+    background: url('../images/arrows_mobile.png') no-repeat center bottom;
+    height: 765px;
+    max-width: 500px;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .add {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .add__link-wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .add__link-wrapper {
+    height: auto;
+  }
+
+  .add__link {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .add__title {
+    align-self: flex-start;
+  }
+
+  .domainname {
+    max-width: 568px;
+    width: calc(100% - 32px);
+  }
+
+  .background {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    top: -20px;
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .domain__text {
+    overflow: hidden;
+  }
+
+  .arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .link__content {
+    text-align: start;
+    font-size: 1.2rem;
+  }
+}
